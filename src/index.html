@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <table class="calculator">
+      <tr>
+        <td colspan="3"><input class="inputbox" type="text" id="reslut" /></td>
+        <td>
+          <input
+            type="button"
+            onclick="clearScreen"
+            id="btn"
+            value="C"
+            class="clear"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><input type="button" onClick="display('1')" value="1" id="1" /></td>
+        <td><input type="button" onClick="display('2')" value="2" id="2" /></td>
+        <td><input type="button" onClick="display('3')" value="3" id="3" /></td>
+        <td><input type="button" onClick="display('+')" value="+" id="+" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" onClick="display('4')" value="4" id="4" /></td>
+        <td><input type="button" onClick="display('5')" value="5" id="5" /></td>
+        <td><input type="button" onClick="display('6')" value="6" id="6" /></td>
+        <td><input type="button" onClick="display('-')" value="-" id="-" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" onClick="display('7')" value="7" id="7" /></td>
+        <td><input type="button" onClick="display('8')" value="8" id="8" /></td>
+        <td><input type="button" onClick="display('9')" value="9" id="9" /></td>
+        <td><input type="button" onClick="display('x')" value="x" id="x" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" onClick="display('0')" value="0" id="0" /></td>
+        <td><input type="button" onClick="display('.')" value="." id="." /></td>
+        <td><input type="button" onClick="display('/')" value="/" id="/" /></td>
+        <td>
+          <input
+            type="button"
+            onClick="display('=')"
+            value="="
+            id="="
+            class="equal"
+          />
+        </td>
+      </tr>
+    </table>
+  </body>
+  <script type="text/javascript" src="./main.js"></script>
+</html>
